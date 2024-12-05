@@ -1,11 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    int a, b;
+    int a, b, smaller;
     scanf("%d %d", &a, &b);
     int n = 1;
-    for (int i = 2; i < a && i < b; i++)
-    {
+    smaller = a < b ? a : b;
+    for (int i = 2; i <= smaller; i++)
+    {   
+    
         if (a % i == 0 && b % i == 0)
         {
             n = 0;
