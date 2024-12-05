@@ -6,8 +6,8 @@ int main()
     int n = 1;
     smaller = a < b ? a : b;
     for (int i = 2; i <= smaller; i++)
-    {   
-    
+    {
+
         if (a % i == 0 && b % i == 0)
         {
             n = 0;
